@@ -7,6 +7,6 @@ jobs:
     - name : checkout
       uses: actions/checkout@v3
     - name : create docker image
-      run: docker build -t  testimage .
+      run: docker run -dt --name c1 ubuntu
    
  
