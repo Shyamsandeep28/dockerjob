@@ -4,7 +4,9 @@ jobs:
  create-image:
    runs-on: ubuntu-latest
    steps:
-   - name : create docker image
-     run: docker build -t  testimage .
+    - name : checkout
+      uses: actions/checkouts@v3
+    - name : create docker image
+      run: docker build -t  testimage .
    
  
