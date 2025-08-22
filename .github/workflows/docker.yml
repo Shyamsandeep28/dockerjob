@@ -1,1 +1,10 @@
-
+name: build dockerimage 
+on: push 
+jobs:
+ create-image:
+   runs-on: ubuntu-latest
+   steps:
+   - name : create docker image
+     run: docker build -t  testimage .
+   
+ 
